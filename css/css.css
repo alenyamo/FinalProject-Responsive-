@@ -1,0 +1,168 @@
+
+@media only screen and (max-width: 1024px) {
+    body {margin: 0;}
+    #content {width: auto;}
+    main {margin-left: 0 ; }
+    nav {float: none ; width: auto; font-size: 90%; }
+    nav li {display: inline-block ; padding: 0.5em;}
+    nav ul { text-align: center;}
+    nav a {border-style: none;}
+    h1, h2 {font-size: 120%;}
+    p {font-size: 90%;}
+    #flexy {display: block;}
+    
+}
+
+@media only screen and (max-width: 768px) {
+    h1, h2, dl {font-size: 90%; }
+    p {font-size: 80%;}
+    nav, nav ul, nav li {padding: 0; font-size: 80%; margin: auto; }
+    nav li {display: block ; list-style-type: none;}
+    nav a { display: block ; padding: 0.5em 0;}
+    #flexy  {display: block;}
+    iframe {max-width: 250px;}
+    
+    
+}
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+    table, thead, tbody, th, td, tr { display: block; }
+    thead tr { position: absolute; top: -9999px; left: -9999px;}
+    tr { border: 1px solid black;}
+    td { border: none; border-bottom: 1px solid grey; position: relative; padding-left: 50%;}
+    td:before { position: absolute; top: 6px; left: 6px; width: 45%; padding-right: 10px; white-space: nowrap;}
+    td:nth-of-type(1):before{ content: "Name";}
+    td:nth-of-type(2):before{ content: "Time";}
+    td:nth-of-type(3):before{ content: "Price";}
+    #flexy {flex-direction: column;}
+}
+
+@media (max-width: 767px) {
+    .video-responsive {
+        width: 100%;
+    }
+}
+
+* {
+    box-sizing : border-box;
+} 
+
+body {
+    margin: 0;
+}
+
+header, main, nav, footer, aside {
+    display: block;
+}
+
+main {
+    background-image: url("../images/flower.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+    font-family: 'Bellefair', serif !important;
+    padding: 10px;
+    justify-content: center;
+    flex: 7;
+    
+}
+
+footer {
+    font-family: 'Ranga', cursive;
+    font-size: 1.5em;
+    clear: right;
+    float: left; 
+    bottom: 0;
+    background-color: white;
+    border-radius: 80px;
+    
+}
+
+header {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    height: 150px;
+    text-shadow: 1px 1px 1px #585858;
+    
+}
+
+nav {
+    float: left;
+    width: 180px;
+    font-family: 'Bellefair', serif !important;
+    font-size: 1.5em;
+    flex: 1.5;
+}
+
+aside {
+    float: right;
+    width: 180px;
+    flex: 1.5;
+    margin-left: 30px;
+    margin-right: 5px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: black !important;
+}
+
+a:hover, a:focus {
+   
+    color: #424242 !important;
+}
+
+a:active {
+    color: #848484 !important;
+    text-shadow: 0.5px #848484 !important ;
+}
+
+dl {
+    font-size: 2em;
+}
+
+td {
+    padding: 4px;
+}
+
+img {
+    width: 70%;
+    height: auto;
+    border-radius: 20px !important;
+} 
+
+.hi {
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    max-width: 620px;
+    height: auto;
+    font-size: 110%;
+}
+
+.video-responsive {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    margin: 0px auto;
+    width: 75%;
+}
+
+.video-responsive iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#flexy {
+    display: flex;
+    flex-direction: raw;
+    
+}
+
